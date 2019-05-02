@@ -1,0 +1,107 @@
+<!-- 
+	NYFoods
+	Author: Eugene, Cathy, Sean
+	Date: 5/1/19
+	
+	Filename:	index.html
+-->
+<html lang="en">
+	<head>	
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="utf-8">
+		<title>NYFoods</title>
+	</head>
+	
+	<body>
+
+<nav class="menu">
+	
+	<ul>
+		<li>
+		<a id="active" href="index.html">Home</a>
+		</li>
+	<ul>
+</nav>
+
+<article>
+	<header>
+	<h1>WELCOME TO OUR BLOG</h1>
+	<p>Date: May 1, 2019</p>
+	</header>
+
+
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+	<div class="numbertext">1 / 3</div>
+	<img src="images/nyfoods1.jpg" style="width:100%">
+	<div class="text">Desserts!</div>
+</div>
+
+<div class="mySlides fade">
+	<div class="numbertext">2 / 3</div>
+        <img src="images/nyfoods2.jpg" style="width:100%">
+        <div class="text">World Famous New York Pizza Slice!</div>
+</div>
+
+<div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/nyfoods3.jpg" style="width:100%">
+        <div class="text">Spicy Chinese Food!</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+	showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+	showSlides(slideIndex = n);
+}
+function showSlides(n) {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var dots = document.getElementsByClassName("dot");
+	if (n > slides.length) {slideIndex = 1}    
+	if (n < 1) {slideIndex = slides.length}
+	for (i = 0; i < slides.length; i++) {
+	slides[i].style.display = "none";  
+}
+	for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+}
+	slides[slideIndex-1].style.display = "block";  
+	dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+
+<p>
+Welcome to our blog! We are known as the NYFoods group! In our blog, we list several prominent, exquisite, distinguished
+restaurants that have a delicious selection of food that will overjoy you when you take that first bite! In addition, we 
+cover many cuisines of various cultures such as Vietnamese, Korean, Chinese, Italian, Greek, etc. To make life easy for
+you, we have a built in map system (Google Maps) that will direct you to the restaurant you choose to dine in. We hope our
+site will come to use in your every day lives, and feel free to share the site to your friends and family!
+</p>
+
+
+
+</article> 
