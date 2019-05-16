@@ -27,9 +27,9 @@ menu	{
 .menu ul	{
 			list-style-type: none; 
 			list-style-image: none;
-			margin: 2px;
-			padding: 2px;
-			overflow: hidden;
+			margin: 0px;
+			padding: 0px;
+			overflow: auto;
 			background-color: #CDBBB3;
 	
 		}
@@ -37,7 +37,7 @@ menu	{
 .menu li	{
 			float: left;
 			font-weight: bold;
-			font-size: 30px;
+			font-size: 20px;
 			margin: 10;
 		}
 
@@ -45,9 +45,9 @@ menu	{
 			display: block;
 			color: white;
 			text-align: center;
-			padding: 10px 30px;
+			padding: 10px 50px;
 			text-decoration: none;
-			height: 10px;
+			height: 30px;
 
 		}
 
