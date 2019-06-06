@@ -172,7 +172,7 @@ hr {
   color: pink;
 } 
 #header {
-  width: 200px;
+  width: 150px;
   height: 50px;
   background-color: red;
   -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
